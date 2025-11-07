@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if [[ $LOG_LEVEL == "TRACE" ]]; then
+if [[ -n "$LOG_LEVEL" && $LOG_LEVEL == "TRACE" ]]; then
 	set -x
 fi
 
